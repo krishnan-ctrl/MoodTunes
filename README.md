@@ -44,4 +44,31 @@ MoodTunes supports 4 unique moods:
 
 ---
 
+
 ## 📁 Folder Structure
+
+MoodTunes/ │ ├── index.html           # Home page with mood options ├── mood.html            # Redirects to playlists based on selected mood ├── style.css            # Stylesheet with glowing effects and layout ├── script.js            # Handles mood button click and redirection ├── screenshot.png       # App preview image └── README.md            # Project documentation 
+
+
+## 🚀 How to Run
+
+1. Download or clone the repo:
+
+git clone https://github.com/krishnan-ctrl/MoodTunes.git
+
+2. Open `index.html` in your browser  
+3. Click on your **mood button**  
+4. Enjoy the curated music playlist on YouTube 🎶
+
+---
+
+## 🧑‍💻 Author
+
+Developed by [Krishnan](https://github.com/krishnan-ctrl) 💻  
+Feel free to fork, star ⭐ and share!
+
+---
+
+## 📜 License
+
+This project is open-source and free to use under the [MIT License](LICENSE)
