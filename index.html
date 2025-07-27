@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodTunes 🎵</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }body {
+  background: linear-gradient(to right, #1db954, #121212);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-group button {
+  background-color: #1db954;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #1db954;
+}
+
+.btn-group button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>MoodTunes</h1>
+    <p>What's your vibe today?</p>
+    <div class="btn-group">
+      <button onclick="openPlaylist('happy')">😊 Happy</button>
+      <button onclick="openPlaylist('sad')">😢 Sad</button>
+      <button onclick="openPlaylist('calm')">😌 Calm</button>
+      <button onclick="openPlaylist('energetic')">⚡ Energetic</button>
+    </div>
+  </div>  <script>
+    function openPlaylist(mood) {
+      const playlistLinks = {
+        happy: "https://youtube.com/playlist?list=PLaZ8DgRHYD_qT3k1B5PZCOgzs8-SR0fxR",
+        sad: "https://youtube.com/playlist?list=PLA-8U9tOtMXtknM6lZbXOyobtRoK2xPQt",
+        calm: "https://youtube.com/playlist?list=PL_DaWb6RFQc39EDKQ-P3iEtg7osX8jfb-",
+        energetic: "https://youtube.com/playlist?list=PLTje1HyJQa0SuZ4l5pWlbQ1LxG0J2hKbj"
+      };
+
+      if (playlistLinks[mood]) {
+        window.location.href = playlistLinks[mood];
+      } else {
+        alert("Playlist not found");
+      }
+    }
+  </script></body>
+</html>
